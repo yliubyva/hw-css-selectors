@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://flukeout.github.io/favicon.png">
+    <title>HW-CSS Dinner Shopping List</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <h1>CSS Dinner Shopping List</h1>
+        <p>Let’s go to the mall!</p>
+      </div>
+    </header>
+    <main>
+      <div class="container-list">
+        <ul>
+          <li>
+            <div class="list-content">
+              <label class="label-pickles" for="check-pickles">
+                <input type="checkbox" id="check-pickles" name="check-pickles" />
+                <span class="span span-pickles">A lot of pickles</span>
+              </label>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-content">
+              <label class="label-apples" for="check-apples">
+                <input type="checkbox" id="check-apples" name="ckeck-apples" />
+                <span class="span span-apples">10 apples</span>
+              </label>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-content">
+              <label for="check-oranges">
+                <input type="checkbox" id="check-oranges" name="ckeck-oranges" />
+                <span class="span span-oranges">20 oranges</span>
+              </label>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-content">
+              <label for="check-plates">
+                <input type="checkbox" id="check-plates" name="ckeck-plates" />
+                <span class="span span-plates">13 plates</span>
+              </label>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-content">
+              <label for="check-bentos">
+                <input type="checkbox" id="check-bentos" name="ckeck-bentos" />
+                <span class="span span-bentos">15 bentos</span>
+              </label>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-content">
+              <label for="check-bottle">
+                <input type="checkbox" id="check-bottle" name="ckeck-bottle" />
+                <span class="span span-bottle">1 bottle of Sake</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+
+        <button>Bon appetit :)</button>
+      </div>
+    </main>
+  </body>
 </html>
