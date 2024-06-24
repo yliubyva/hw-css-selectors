@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  transition: all 0.1s ease-in;
+}
+
+html {
+  width: 100hv;
+  height: 100vh;
+  border: 5px solid rgba(255, 255, 255, 1);
+}
+
+h1,
+p,
+li,
+button {
+  font-family: roboto, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 18.7px;
+  font-size: 16px;
+}
+
+h1,
+p,
+li,
+button {
+  color: rgba(255, 137, 132, 1);
+}
+
+li,
+button {
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+body {
+  background: rgba(59, 63, 69, 1);
+}
+
+.container-header {
+  padding-top: 19px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.container-header,
+button {
+  background: rgba(74, 79, 86, 1);
+}
+
+.container-list {
+  width: 100%;
+  max-width: 534px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+ul {
+  padding-bottom: 45px;
+}
+
+li {
+  color: rgba(255, 255, 255, 1);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+
+  list-style: none;
+}
+
+li:nth-child(odd) {
+  background: rgba(136, 131, 158, 1);
+}
+
+li:nth-child(even) {
+  background: rgba(122, 117, 147, 1);
+}
+
+input {
+  height: 19px;
+  width: 19px;
+}
+
+label {
+  padding: 14px;
+
+  display: block;
+  cursor: pointer;
+}
+
+span {
+  padding-left: 16px;
+}
+
+span::after {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.span-pickles::after {
+  content: " (for the next lessons about CSS)";
+  font-size: 11px;
+}
+
+.span-apples::after {
+  content: " (for more CSS manipulations)";
+  font-size: 11px;
+}
+
+.span-oranges::after {
+  content: " (because they are awesome)";
+  font-size: 11px;
+}
+
+.span-plates::after {
+  content: " (hm... they always dissapear)";
+  font-size: 11px;
+}
+
+.span-bottle::after {
+  content: " (for my friends)";
+  font-size: 11px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  width: 534px;
+  padding: 12px;
+}
+
+li:hover {
+  background: rgba(98, 94, 119, 1);
+  border-top: 3px solid rgba(255, 255, 255, 1);
+  border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+li:active {
+  background: rgba(255, 137, 132, 1);
+}
+
+input:checked + span {
+  text-decoration: line-through;
+  color: rgba(155, 150, 172, 1);
+}
+
+li:has(input[type="checkbox"]:checked) label{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
